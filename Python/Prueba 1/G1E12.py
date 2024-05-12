@@ -1,0 +1,6 @@
+print("El siguiente programa intercambia la parte decimal por la parte entera")
+x = input('Ingrese un número decimal separado por una ",": ')
+y = (x.split(","))
+print(y)
+print(y[1] + "," + y[0])
+print(",".join(y))

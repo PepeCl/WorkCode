@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <p>Bienvenido a nuestra aplicación de gestión de tareas.</p>
+    
+    <h2>Tareas:</h2>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <form action="/complete_task" method="post" style="display: inline;">
+                    <input type="checkbox" name="task" value="{{ task }}" onchange="this.form.submit()">
+                    {{ task }}
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <!-- codigo para agregar nueva tarea-->
+    <h2>Agregar nueva tarea:</h2>
+    <form action="/add_task" method="post">
+        <input type="text" name="task" placeholder="Ingrese una nueva tarea" required>
+        <button type="submit">Agregar tarea</button>
+    </form>
+
+    <!-- codigo para eliminar tareas -->
+    <h2>Eliminar tarea:</h2>
+    <form action="/delete_task" method="post">
+        <select name="task">
+            {% for task in tasks %}
+                <option value="{{ task }}">{{ task }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Eliminar tarea</button>
+    </form>
+
+    <script>
+        function deleteTask(checkbox) {
+            if (checkbox.checked) {
+                checkbox.parentNode.remove();
+            }
+        }
+    </script>
+</body>
+</html>
