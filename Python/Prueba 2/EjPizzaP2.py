@@ -28,7 +28,8 @@ while True:
             break
         else:
             lista_usuarios.append(pizza) #agrego cada lista de pizza a una lista total de usuarios
-    lista_usuarios = []
+        print(lista_usuarios)
+    lista_usuarios=[]
 
 for i in lista_compras: #suma pizzas por usuario
     for j in i:

@@ -9,19 +9,17 @@ def organizador_de_listas (lista1,lista2):
     lista_unica = []
     contador_vocales_1=0
     contador_vocales_2=0
-    lista_mas_grande = ""
     contador_elemento=0
-    elemento_mas_grande = ""
     vocales = "aeiou"
 
     for m in lista2:
         for n in m:
-            if n in vocales:
+            if n.lower() in vocales:
                 contador_vocales_2 += 1
 
     for i in lista1:
         for j in i:
-            if j in vocales:
+            if j.lower() in vocales:
                 contador_vocales_1 += 1
         if i in lista2:
             lista_conjunta.append(i)
@@ -42,9 +40,9 @@ def organizador_de_listas (lista1,lista2):
             contador_elemento = (len(i))
             elemento_mas_grande = i
 
-    return f"los elementos que se repite son {lista_conjunta} \nlos elementos únicos son {lista_unica}\nla lista más grande es la {lista_mas_grande}\nel elemento más grande es {elemento_mas_grande}"
+    return f"los elementos que se repite son: {lista_conjunta} \nlos elementos únicos son: {lista_unica}\nla lista más grande es la: {lista_mas_grande}\nel elemento más grande es: {elemento_mas_grande}"
 
-lista_1 = ["abc","123","agb","1235","aaaaaaa"]
+lista_1 = ["abc","123","agb","1235","aaaaaaaAAAAAAAAAAAAAAAAAAA"]
 lista_2 = ["123","hola","abc","1234","aaaaaaaaaaaaaaaaa"]
 
 print(organizador_de_listas(lista_1,lista_2))
