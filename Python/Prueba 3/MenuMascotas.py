@@ -84,40 +84,40 @@ contador = 0
 while True:
     eleccion = input("Qué acción desea realizar?: ")
     if eleccion == "1":
-        for i, llave in enumerate(lista_animales):
+        for i, llave in enumerate(lista_animales): #recorre la lista y asigna un número a cada llave
             print(f"{i + 1} ---> {llave["nombre"]}, {llave["tipo"]}")
-        seleccion = int(input("Seleccione el animal: "))
+        seleccion = int(input("Seleccione el animal: ")) #ingresa id de animal
         if seleccion in range (1,11): #condicion de rango de lista
-            animal_seleccionado = lista_animales[seleccion-1]
-            for key in animal_seleccionado.keys():
+            animal_seleccionado = lista_animales[seleccion - 1] #recordar que la lista cuenta desde 0, por ende se debe restar 1 para obtener el id correcto 
+            for key in animal_seleccionado.keys(): #recorre el diccionario
                 print(f"{key} ---> {animal_seleccionado[key]}")
             continue
         else:
-            print("Elemento inválido")
+            print("Elemento inválido") #condicion de que la persona agregue un número mayor a los elementos o algún caracter inválido
             continue
     elif eleccion == "2":
-        filtro  = input("Que tipo de animal desea obtener?: ").lower()
-        for i in lista_animales:
-            if filtro in i.values():
-                contador += 1
-                print(f"el animal {i["nombre"]} es un {i["tipo"]}")
+        filtro  = input("Que tipo de animal desea obtener?: ").lower() #filtro
+        for i in lista_animales: #recorro la lista de diccionarios
+            if filtro in i.values(): #busco el nombre del filtro en los valores de cada diccionario
+                contador += 1 #agregue un contador porque si xD
+                print(f"El animal {i["nombre"]} es un {i["tipo"]}")
         print(f"hay {contador} animales de ese tipo")
         contador = 0
         continue
     elif eleccion == "3":
-        print("Ingrese su nuevo animal")
+        print("Ingrese su nuevo animal") #nuevo animal
         nombre = input("Ingrese el nombre del animal: ").lower()
         tipo = input("Ingrese el tipo de animal: ")
         peso = int(input("Ingrese el peso del animal en Kg: "))
         color = input("Ingrese el color del animal: ")
-        lista_animales.append({"nombre":nombre,"tipo":tipo,"peso":peso,"color":color})
-        print(f"El animal de nombre {nombre} ha sido agregado correctamente a su lista")
-        print(lista_animales[-1])
-        print(input( ))
+        lista_animales.append({"nombre":nombre,"tipo":tipo,"peso":peso,"color":color}) #se agrega a la lista un diccionario con los datos proporcionados
+        print(f"El animal de nombre {nombre} ha sido agregado correctamente a su lista") #indica que el animal ha sido ingresado correctamente
+        print(lista_animales[-1]) #llamo al último elemento de la lista de diccionarios, osea el animal que agregamos
+        print(input( )) #input de pausa, al presionar enter sigue corriendo el programa
         continue
-    elif eleccion == "4":
+    elif eleccion == "4": #condicion de salida
         print("Hasta pronto!")
         break
     else:
-        print("Ingrese una acción válida")
+        print("Ingrese una acción válida") #condicion de que el usuario ingrese un número fuera del menú o un caracter inválido
         continue

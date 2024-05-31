@@ -76,32 +76,30 @@ lista_animales = [
 ]
 
 
-def lista_enumerada(lista):
-    for numero , llave in enumerate(lista):
+def lista_enumerada(lista): #se define la función, la cual acepta una lista como variable de entrada
+    for numero , llave in enumerate(lista): 
         return f"{numero + 1} ---> {llave["nombre"]},{llave["tipo"]}"
     
-def seleccionar_animal(id,lista):
-    if id in range (1,11):
-        animal_selec = lista[id - 1]
+def seleccionar_animal(id,lista): #se define la funcion de seleccionar animal la cual acepta la id o el numero que ingresa el usuario y la lista de animales
+    if id in range (len(lista)): #condicion de rango de lista
+        animal_selec = lista[id - 1] 
         for key in animal_selec.keys():
             return f"{key} ---> {animal_selec[key]}"
     else:
         print("Elemento inválido")
 
-def filtro(tipo,lista):
+def filtro(tipo,lista): #funcion de filtro que acepta como variables de entrada el tipo de animal y la lista de animales
     for i in lista:
         if tipo in i.values():
             return f"El animal {i["nombre"]} es un {i["tipo"]}"
         
-def agregar_animal(nombre,type,weight,color,lista):
+def agregar_animal(nombre,type,weight,color,lista): #función de agregar animales a la lista, acepta como variables de entrada el nombre, tipo, peso, color y la lista de animales
     lista.append({"nombre":nombre,"tipo":type,"peso":weight,"color":color})
     return f"El animal {nombre} ha sido agregado correctamente"
 
 menu = ["Mostrar lista enumerada de animales y seleeccionar uno", "Obtener un animal según su tipo", "Agregar un animal a la lista", "Salir"]
 for numero, accion in enumerate(menu):
         print(f"{numero + 1} --> {accion}")
-
-contador = 0
 
 while True:
     eleccion = input("Qué acción desea realizar?: ")
