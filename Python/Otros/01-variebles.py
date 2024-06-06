@@ -1,5 +1,6 @@
-diction = [{"nombre":"pepe","edad":32},{"nombre":"tati","edad":31}]
-if "nombres" not in diction[1].keys():
-    print("hola")
-else:
-    print("gola")
+lista = ["AT-CG-TT","CG-AT-GG"]
+lista_adn=[]
+for i in lista:
+    nueva_lista = i.split("-")
+    lista_adn.append(nueva_lista)
+print(lista_adn)

@@ -88,7 +88,7 @@ def lista_enumerada(lista): #se define la función, la cual acepta una lista com
         print(f"{numero + 1} ---> {llave["nombre"]},{llave["tipo"]}")
     
 def seleccionar_animal(id,lista): #se define la funcion de seleccionar animal la cual acepta la id o el numero que ingresa el usuario y la lista de animales
-    if id in range (len(lista)): #condicion de rango de lista
+    if id in range (len(lista)+1): #condicion de rango de lista
         animal_selec = lista[id - 1] 
         for key in animal_selec.keys():
             print(f"{key} ---> {animal_selec[key]}")
