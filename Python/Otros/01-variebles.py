@@ -1,3 +1,3 @@
-lsita = [4,5,6,7,8,9,1,2]
-
-print(len(lsita))
+diccccc = {"nombre":"pepe","edad":25}
+if "nombre usuario" not in diccccc.keys():
+    print("gola")
