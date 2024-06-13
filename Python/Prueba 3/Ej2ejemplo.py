@@ -19,5 +19,3 @@ el print debe verse asi: print(pepito[llave],end=" ")
 
 lista_llaves = ["nombre","edad","HP","genero"]
 
-for elemento in lista_llaves:
-    print(f"{elemento} : {pepito[elemento]}")
