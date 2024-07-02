@@ -1,0 +1,178 @@
+[
+    {
+        "LibroID": 1,
+        "Titulo": "Cien A\u00f1os de Soledad",
+        "AutorID": 1,
+        "CategoriaID": 6,
+        "AnoPublicacion": 1937,
+        "ISBN": "978-0-388-65180-3"
+    },
+    {
+        "LibroID": 2,
+        "Titulo": "La Casa de los Esp\u00edritus",
+        "AutorID": 2,
+        "CategoriaID": 6,
+        "AnoPublicacion": 1919,
+        "ISBN": "978-1-950410-01-9"
+    },
+    {
+        "LibroID": 3,
+        "Titulo": "Rayuela",
+        "AutorID": 3,
+        "CategoriaID": 9,
+        "AnoPublicacion": 1986,
+        "ISBN": "978-1-5347-6367-8"
+    },
+    {
+        "LibroID": 4,
+        "Titulo": "La Ciudad y los Perros",
+        "AutorID": 4,
+        "CategoriaID": 11,
+        "AnoPublicacion": 1931,
+        "ISBN": "978-1-5467-2222-9"
+    },
+    {
+        "LibroID": 5,
+        "Titulo": "La Sombra del Viento",
+        "AutorID": 5,
+        "CategoriaID": 1,
+        "AnoPublicacion": 1941,
+        "ISBN": "978-1-919794-21-1"
+    },
+    {
+        "LibroID": 6,
+        "Titulo": "Ficciones",
+        "AutorID": 6,
+        "CategoriaID": 1,
+        "AnoPublicacion": 1979,
+        "ISBN": "978-0-8493-3305-7"
+    },
+    {
+        "LibroID": 7,
+        "Titulo": "Don Quijote de la Mancha",
+        "AutorID": 7,
+        "CategoriaID": 3,
+        "AnoPublicacion": 2019,
+        "ISBN": "978-1-155-07917-2"
+    },
+    {
+        "LibroID": 8,
+        "Titulo": "Veinte Poemas de Amor y una Canci\u00f3n Desesperada",
+        "AutorID": 8,
+        "CategoriaID": 9,
+        "AnoPublicacion": 1953,
+        "ISBN": "978-1-317-82715-3"
+    },
+    {
+        "LibroID": 9,
+        "Titulo": "Bodas de Sangre",
+        "AutorID": 9,
+        "CategoriaID": 10,
+        "AnoPublicacion": 1991,
+        "ISBN": "978-0-427-52918-6"
+    },
+    {
+        "LibroID": 10,
+        "Titulo": "El Laberinto de la Soledad",
+        "AutorID": 10,
+        "CategoriaID": 8,
+        "AnoPublicacion": 1997,
+        "ISBN": "978-0-8341-7859-5"
+    },
+    {
+        "LibroID": 11,
+        "Titulo": "El Amor en los Tiempos del C\u00f3lera",
+        "AutorID": 11,
+        "CategoriaID": 9,
+        "AnoPublicacion": 1999,
+        "ISBN": "978-1-61878-398-1"
+    },
+    {
+        "LibroID": 12,
+        "Titulo": "Eva Luna",
+        "AutorID": 12,
+        "CategoriaID": 7,
+        "AnoPublicacion": 2013,
+        "ISBN": "978-1-70770-142-1"
+    },
+    {
+        "LibroID": 13,
+        "Titulo": "Bestiario",
+        "AutorID": 13,
+        "CategoriaID": 7,
+        "AnoPublicacion": 1943,
+        "ISBN": "978-1-4471-5171-5"
+    },
+    {
+        "LibroID": 14,
+        "Titulo": "La Fiesta del Chivo",
+        "AutorID": 14,
+        "CategoriaID": 5,
+        "AnoPublicacion": 2015,
+        "ISBN": "978-1-881360-19-3"
+    },
+    {
+        "LibroID": 15,
+        "Titulo": "El Juego del \u00c1ngel",
+        "AutorID": 15,
+        "CategoriaID": 5,
+        "AnoPublicacion": 1940,
+        "ISBN": "978-1-361-67728-5"
+    },
+    {
+        "LibroID": 16,
+        "Titulo": "El Aleph",
+        "AutorID": 16,
+        "CategoriaID": 10,
+        "AnoPublicacion": 1927,
+        "ISBN": "978-1-56793-349-9"
+    },
+    {
+        "LibroID": 17,
+        "Titulo": "Novelas Ejemplares",
+        "AutorID": 17,
+        "CategoriaID": 12,
+        "AnoPublicacion": 1926,
+        "ISBN": "978-0-05-625482-4"
+    },
+    {
+        "LibroID": 18,
+        "Titulo": "Residencia en la Tierra",
+        "AutorID": 18,
+        "CategoriaID": 1,
+        "AnoPublicacion": 1978,
+        "ISBN": "978-0-689-88688-1"
+    },
+    {
+        "LibroID": 19,
+        "Titulo": "La Casa de Bernarda Alba",
+        "AutorID": 19,
+        "CategoriaID": 6,
+        "AnoPublicacion": 2015,
+        "ISBN": "978-1-998513-16-1"
+    },
+    {
+        "LibroID": 20,
+        "Titulo": "Piedra de Sol",
+        "AutorID": 20,
+        "CategoriaID": 10,
+        "AnoPublicacion": 1920,
+        "ISBN": "978-0-8485-3333-5"
+    },
+    {
+        "Libroid": "10000",
+        "Titulo": "Libro de Jos\u00e9",
+        "AutorID": "9999",
+        "CategoriaID": "6",
+        "Anopublicacion": "1997",
+        "ISBN": "987-987-987"
+    },
+    {
+        "Libroid": " nvalsv",
+        "Titulo": "asfnas\u00f1f",
+        "AutorID": "ashfas",
+        "CategoriaID": "bfas",
+        "Anopublicacion": "b",
+        "ISBN": "afsn"
+    }
+]

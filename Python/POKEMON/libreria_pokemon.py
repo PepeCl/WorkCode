@@ -1,3 +1,8 @@
+def crearPkm(nombre:str,tipo:str,especie:str) -> dict:
+    pkm = {"nombre":nombre,"tipo":tipo,"especie":especie,"hambre":50,"felicidad":50}
+    return pkm
+
+
 def initPkm(nombre:str,tipo:str,especie:str) -> dict:
     nombre_archivo = str(nombre) + "_datos.csv"
     archivo = open(nombre_archivo,"w")
@@ -26,5 +31,7 @@ def alimentar(pokemon:dict,comida:int) -> None:
     pokemon["hambre"] -= comida
     if (pokemon["hambre"]<0):
         pokemon["hambre"]=0
+
+#como verificar si existe un archivo en una carpeta
 
 

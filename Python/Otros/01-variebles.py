@@ -1,3 +1,6 @@
-diccccc = {"nombre":"pepe","edad":25}
-if "nombre usuario" not in diccccc.keys():
-    print("gola")
+def fun(x):
+    x +=1
+    return x
+x=2
+x=fun(x+1)
+print(x)
