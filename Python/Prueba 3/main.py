@@ -52,3 +52,15 @@ while (True):
             if opcion == "n":
                 break
             
+    if accion == 4:
+        for i, elementos in enumerate(var):
+            print(f"{i+1} , {elementos}\n")
+        contra = input("Ingrese la contraseña: ")
+        if check_password(contra):
+            id = int(input("Ingrese el id del producto: "))
+            sele = input("Ingrese que desea modificar (nombre,precio,kcal,ingredientes): ")
+            producto = var[id-1]
+            if sele in producto.keys():
+                modi = input("Ingrese nuevo dato: ")
+                producto[sele] = modi
+        print(var)
