@@ -1,5 +1,5 @@
 def conversor_f_to_c(celcius):
-    fahrenheit = (9/5) * celcius +32
+    fahrenheit = (9/5) * celcius + 32
     return fahrenheit
 
 print(conversor_f_to_c(30))
