@@ -7,7 +7,7 @@ def distancia_en_metro(tiempo):
 
 def distancia_en_bus(tiempo):
     return (0.3 * tiempo) - 6
-"""
+
 tiempo = np.arange(0,10,0.1)
 dist_metro = 0.4 * tiempo
 dist_bus = 0.3 * tiempo
@@ -20,7 +20,7 @@ plt.ylabel("Distancia recorrida [Km]")
 plt.grid(True)
 
 plt.show()
-"""
+
 
 #se asume que la persona toma el metro en cuanto llega el tren a la estacion y se baja en cuanto el tren llega a la estacion.
 estaciones = 9
